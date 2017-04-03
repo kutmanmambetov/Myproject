@@ -4,7 +4,7 @@
 </head>
 <body>
 <?php
-   if($_FILES['filename']['size'] > upload_max_filesize)
+   if($_FILES['filename']['size'] > 1024*3*1024)
    {
      echo "Размер файла превышает три мегабайта";
      exit;
